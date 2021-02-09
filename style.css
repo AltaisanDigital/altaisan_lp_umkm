@@ -18,6 +18,11 @@ body {
     width: 100vw;
 }
 
+.judul {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 /* HEADER */
 #header {
@@ -101,11 +106,6 @@ body {
     padding: 2rem;
 }
 
-#judul_problem {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 #wrap_isiproblem {
     display: flex;
     flex-direction: column;
@@ -144,6 +144,39 @@ body {
 }
 
 /* END PROBLEM */
+
+
+/* SOLUSI */
+
+#solusi {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    color: #fff;
+}
+
+#wrap_judulsolusi, #wrap_logosolusi, #wrap_desksolusi {
+    text-align: center;
+    padding: 2rem;
+}
+
+#wrap_logosolusi img {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#wrap_desksolusi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#desk_solusi {
+    width: 70%;
+}
+
+/* END SOLUSI */
 
 
 /* MOBILE */
@@ -221,6 +254,25 @@ body {
         font-size: .8rem;
     }
     /* END PROBLEM */
+
+    /* SOLUSI */
+    #judul_solusi {
+        font-size: 1rem;
+    }
+    #wrap_judulsolusi, #wrap_logosolusi, #wrap_desksolusi {
+        text-align: center;
+        padding: 1.5rem;
+    }
+    #wrap_logosolusi img {
+        width: 60%;
+    }
+    #wrap_desksolusi {
+        font-size: .8rem;
+    }
+    #desk_solusi {
+        width: 100%;
+    }
+    /* END SOLUSI */
 }
 
 /* 
