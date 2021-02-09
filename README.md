@@ -1,0 +1,1 @@
+# altaisan_lp_umkm
