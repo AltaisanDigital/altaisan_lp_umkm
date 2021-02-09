@@ -86,6 +86,65 @@ body {
 }
 /* END HEADER */
 
+/* PROBLEM */
+
+#problem {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+#wrap_judulproblem {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#judul_problem {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#wrap_isiproblem {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.wrap_isiproblem {
+    display: flex;
+}
+
+.isi_problem {
+    display: flex;
+    width: 50%;
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.wrap_vproblem {
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.wrap_deskproblem {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 1.3rem;
+}
+
+/* END PROBLEM */
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -120,7 +179,7 @@ body {
     }
     #wrap_headline div {
         margin-top: .8rem;
-        margin-bottom: rem;
+        margin-bottom: .8rem;
     }
     #judul {
         font-size: 1.5rem;
@@ -133,7 +192,35 @@ body {
     #btn_pilihpaket button {
         width: 80%;
     }
+    .wrap_vproblem img {
+        width: 30vw;
+    }
     /* END HEADER */
+
+
+    /* PROBLEM */
+    #wrap_judulproblem {
+        padding: 1.5rem;
+    }
+    #judul_problem {
+        text-align: center;
+        font-size: 1rem;
+    }
+    #wrap_isiproblem {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .wrap_isiproblem {
+        display: flex;
+        flex-direction: column;
+    }
+    .isi_problem {
+        width: auto;
+    }
+    .wrap_deskproblem {
+        font-size: .8rem;
+    }
+    /* END PROBLEM */
 }
 
 /* 
