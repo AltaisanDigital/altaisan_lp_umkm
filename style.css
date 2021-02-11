@@ -240,6 +240,54 @@ body {
 
 /* END FITUR */
 
+/* DEMO */
+
+#demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+#wrap_juduldemo {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#wrap_isidemo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.isidemo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.imgdemo img {
+    display: block;
+    width: 100%;
+}
+
+.deskdemo {
+    text-align: center;
+    width: 100%;
+    background-color: var(--color2);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+/* END DEMO */
+
 /* HARGA */
 
 #harga {
@@ -455,6 +503,23 @@ body {
     }
     
     /* END FITUR */
+
+    /* DEMO */
+    #wrap_juduldemo {
+        padding: 1.5rem;
+    }
+    #judul_demo {
+        /* text-align: center; */
+        font-size: 1rem;
+    }
+    #wrap_isidemo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .deskdemo {
+        font-size: .8rem;
+    }
+    /* END DEMO */
 
     /* HARGA */
     #wrap_judulharga {
