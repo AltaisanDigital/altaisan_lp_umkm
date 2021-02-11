@@ -6,6 +6,11 @@
     --color3: #F9CA24;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -235,6 +240,93 @@ body {
 
 /* END FITUR */
 
+/* HARGA */
+
+#harga {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap_judulharga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#wrap_isiharga {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.wrap_paket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    background-color: var(--color1);
+}
+
+.wrap_paket:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.judul_paket {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.harga_paket {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: var(--color3);
+}
+
+.isi_paket {
+    height: auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.isi_paket ul {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.isi_paket ul li {
+    padding: 1rem 0;
+    list-style: none;
+    text-align: center;
+}
+
+.coret {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.pesan_paket {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+/* END HARGA */
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -293,6 +385,7 @@ body {
         padding: 1.5rem;
     }
     #judul_problem {
+        font-weight: bold;
         text-align: center;
         font-size: 1rem;
     }
@@ -362,6 +455,34 @@ body {
     }
     
     /* END FITUR */
+
+    /* HARGA */
+    #wrap_judulharga {
+        padding: 1rem;
+    }
+    #wrap_isiharga {
+        flex-direction: column;
+    }
+    .wrap_paket {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .wrap_paket:nth-child(2) {
+        margin: 0;
+    }
+    .judul_paket {
+        font-size: 1rem;
+    }
+    .harga_paket {
+        font-size: 1.5rem;
+    }
+    .isi_paket {
+        padding: 1rem;
+    }
+    .isi_paket, .pesan_paket {
+        font-size: 1rem;
+    }
+    /* END HARGA */
 }
 
 /* 
