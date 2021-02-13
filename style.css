@@ -293,6 +293,7 @@ body {
 #harga {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 #wrap_judulharga {
@@ -375,6 +376,96 @@ body {
 
 /* END HARGA */
 
+/* FAQ */
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#wrap_judulfaq {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#wrap_isifaq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 0 3rem;
+}
+
+.isifaq {
+    display: grid;
+    grid-template-rows: auto-fit, 1fr;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.faqjudul {
+    padding: .5rem 0;
+    border-radius: 5px;
+    background-color: var(--color3);
+}
+
+.faqjawab {
+    padding: 1rem 2rem;
+    background-color: #f3f3f3;
+    height: 20vh;
+}
+
+/* END FAQ */
+
+/* KONTAK */
+
+#kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#wrap_judulkontak {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#wrap_isikontak {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 5rem;
+}
+
+.isikontak {
+    padding: 2rem 0;
+    background-color: var(--color2);
+    font-size: 2rem;
+}
+
+/* END KONTAK */
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--color1);
+}
+
+/* END FOOTER */
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -548,6 +639,29 @@ body {
         font-size: 1rem;
     }
     /* END HARGA */
+    /* FAQ & KONTAK */
+    #wrap_judulfaq, #wrap_judulkontak {
+        padding: 1.5rem;
+    }
+    #judul_faq, #judul_kontak {
+        font-size: 1rem;
+    }
+    #wrap_isifaq {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        font-size: .7rem;
+    }
+    .faqjawab {
+        padding: 1rem 1rem;
+    }
+    .isikontak {
+        font-size: 1rem;
+    }
+    #footer {
+        font-size: .8rem;
+        text-align: center;
+    }
+    /* END FAQ % KONTAK */
 }
 
 /* 
