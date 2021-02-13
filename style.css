@@ -188,6 +188,7 @@ body {
 #fitur {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
 }
 
 #wrap_judulfitur {
@@ -197,25 +198,29 @@ body {
     padding: 2rem;
 }
 
-#wrap_isifitur {
+/* #wrap_isifitur {
     display: flex;
     flex-direction: column;
     padding-left: 7rem;
     padding-right: 7rem;
-}
+} */
 
+#wrap_isifitur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 7rem;
+}
+/* 
 .wrap_isifitur {
     display: flex;
     justify-content: center;
-}
+} */
 
 .isi_fitur {
     display: flex;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding: .5rem 0;
     flex-direction: column;
     align-items: center;
-    width: 30%;
 }
 
 .wrap_deskfitur {
@@ -564,6 +569,9 @@ body {
     /* END SOLUSI */
 
     /* FITUR */
+    #fitur {
+        padding-bottom: 1rem;
+    }
     #wrap_judulfitur {
         padding: 1.5rem;
     }
@@ -571,12 +579,15 @@ body {
         text-align: center;
         font-size: 1rem;
     }
-    .wrap_isifitur {
-        flex-direction: column;
-    }
     #wrap_isifitur {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .wrap_isifitur {
+        flex-direction: column;
+    } */
+    #wrap_isifitur {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .isi_fitur {
         width: 100%;
