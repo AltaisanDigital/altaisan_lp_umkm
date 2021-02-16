@@ -13,7 +13,7 @@
 // 	} // End if
 // });
 
-let coll = document.getElementsByClassName("faqjudul");
+let coll = document.getElementsByClassName("wrap_faqjudul");
 let i;
 
 for (i = 0; i < coll.length; i++) {
