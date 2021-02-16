@@ -1,17 +1,18 @@
-// $("#btn_pilihpaket").on('click', function (event) {
-// 	// Make sure this.hash has a value before overriding default behavior
-// 	if (this.hash !== "") {
-// 		// Prevent default anchor click behavior
-// 		event.preventDefault();
-// 		// Store hash
-// 		let hash = this.hash;
-// 		// Using jQuery's animate() method to add smooth page scroll
-// 		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-// 		$('html, body').animate({
-// 			scrollTop: $(hash).offset().top - 50
-// 		}, 1000, 'easeOutSine')
-// 	} // End if
-// });
+$("#btn_pilihpaket a").on('click', function (event) {
+	// Make sure this.hash has a value before overriding default behavior
+	console.log(this.hash)
+	if (this.hash !== "") {
+		// Prevent default anchor click behavior
+		event.preventDefault();
+		// // Store hash
+		let hash = this.hash;
+		// // Using jQuery's animate() method to add smooth page scroll
+		// // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 1000)
+	} // End if
+});
 
 let coll = document.getElementsByClassName("wrap_faqjudul");
 let i;
